@@ -1,4 +1,5 @@
 require './handlers/hello_lita.rb'
+require 'dotenv/load'
 
 Lita.configure do |config|
   # The name your robot will use.
@@ -19,7 +20,8 @@ Lita.configure do |config|
 
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
+  config.robot.adapter = :telegram_plus
+  config.adapters.telegram_plus.token = ENV['TELEGRAM_TOKEN']
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
