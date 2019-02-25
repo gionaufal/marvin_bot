@@ -1,3 +1,5 @@
+require './handlers/hello_lita.rb'
+
 Lita.configure do |config|
   # The name your robot will use.
   config.robot.name = "Marvin"
@@ -24,7 +26,7 @@ Lita.configure do |config|
   # config.adapter.password = "secret"
 
   ## Example: Set options for the Redis connection.
-  config.redis.host = "redis"
+  config.redis[:host] = "redis"
   # config.redis.port = 1234
 
   ## Example: Set configuration for any loaded handlers. See the handler's
