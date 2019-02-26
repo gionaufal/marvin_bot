@@ -1,4 +1,6 @@
-require './handlers/hello_lita.rb'
+require './handlers/hello_lita'
+require './handlers/weather'
+
 require 'dotenv/load'
 
 Lita.configure do |config|

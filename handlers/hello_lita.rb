@@ -1,12 +1,12 @@
 module Lita
   module Handlers
     class HelloLita < Handler
-      route(/say something/, :take_over_the_world,
+      route(/say something/, :complain,
             command: false,
             help: { "say something": "replies with Marvin classic quote" }
       )
 
-      def take_over_the_world(response)
+      def complain(response)
         response.reply(
           'Life! Dont talk to me about life!'
         )

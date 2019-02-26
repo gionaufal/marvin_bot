@@ -6,6 +6,7 @@ gem "dotenv"
 
 gem "lita-telegram-plus"
 
+gem "pry-byebug"
 
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"
